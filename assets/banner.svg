@@ -1,0 +1,89 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0c1524"/>
+      <stop offset="100%" stop-color="#05070c"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0AC8B9" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0AC8B9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C89B3C" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#C89B3C" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F0E6D2"/>
+      <stop offset="50%" stop-color="#C89B3C"/>
+      <stop offset="100%" stop-color="#F0E6D2"/>
+    </linearGradient>
+    <linearGradient id="hexStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0AC8B9"/>
+      <stop offset="100%" stop-color="#C89B3C"/>
+    </linearGradient>
+    <linearGradient id="hexFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0AC8B9" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#091428" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <circle cx="960" cy="120" r="260" fill="url(#glow1)"/>
+  <circle cx="1050" cy="260" r="180" fill="url(#glow2)"/>
+
+  <!-- Faint hex grid background -->
+  <g stroke="#1c2a3a" stroke-width="1" opacity="0.5">
+    <polygon points="740,40 780,60 780,100 740,120 700,100 700,60"/>
+    <polygon points="820,40 860,60 860,100 820,120 780,100 780,60"/>
+    <polygon points="900,40 940,60 940,100 900,120 860,100 860,60"/>
+    <polygon points="980,40 1020,60 1020,100 980,120 940,100 940,60"/>
+    <polygon points="1060,40 1100,60 1100,100 1060,120 1020,100 1020,60"/>
+    <polygon points="780,110 820,130 820,170 780,190 740,170 740,130"/>
+    <polygon points="860,110 900,130 900,170 860,190 820,170 820,130"/>
+    <polygon points="940,110 980,130 980,170 940,190 900,170 900,130"/>
+    <polygon points="1020,110 1060,130 1060,170 1020,190 980,170 980,130"/>
+    <polygon points="1100,110 1140,130 1140,170 1100,190 1060,170 1060,130"/>
+    <polygon points="740,180 780,200 780,240 740,260 700,240 700,200"/>
+    <polygon points="820,180 860,200 860,240 820,260 780,240 780,200"/>
+    <polygon points="900,180 940,200 940,240 900,260 860,240 860,200"/>
+    <polygon points="980,180 1020,200 1020,240 980,260 940,240 940,200"/>
+    <polygon points="1060,180 1100,200 1100,240 1060,260 1020,240 1020,200"/>
+    <polygon points="780,250 820,270 820,310 780,330 740,310 740,270"/>
+    <polygon points="860,250 900,270 900,310 860,330 820,310 820,270"/>
+    <polygon points="940,250 980,270 980,310 940,330 900,310 900,270"/>
+    <polygon points="1020,250 1060,270 1060,310 1020,330 980,310 980,270"/>
+  </g>
+
+  <!-- Central glowing hex crystal -->
+  <g>
+    <polygon points="945,105 1015,142 1015,216 945,253 875,216 875,142" fill="url(#hexFill)" stroke="url(#hexStroke)" stroke-width="2.5"/>
+    <polygon points="945,135 985,157 985,201 945,223 905,201 905,157" fill="none" stroke="#C89B3C" stroke-width="1.5" opacity="0.85"/>
+    <polygon points="945,158 968,170 968,188 945,200 922,188 922,170" fill="#0AC8B9" opacity="0.5"/>
+    <line x1="945" y1="105" x2="945" y2="253" stroke="#0AC8B9" stroke-width="1" opacity="0.35"/>
+    <line x1="875" y1="142" x2="1015" y2="216" stroke="#0AC8B9" stroke-width="1" opacity="0.25"/>
+    <line x1="1015" y1="142" x2="875" y2="216" stroke="#0AC8B9" stroke-width="1" opacity="0.25"/>
+  </g>
+
+  <!-- Small orbiting rune shards -->
+  <polygon points="1060,90 1078,100 1078,120 1060,130 1042,120 1042,100" fill="none" stroke="#C89B3C" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="820,240 838,250 838,270 820,280 802,270 802,250" fill="none" stroke="#0AC8B9" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="1090" cy="200" r="4" fill="#F0E6D2" opacity="0.8"/>
+  <circle cx="800" cy="120" r="3" fill="#0AC8B9" opacity="0.8"/>
+  <circle cx="1120" cy="130" r="3" fill="#C89B3C" opacity="0.7"/>
+
+  <!-- Decorative side blade/rune line under headline -->
+  <path d="M60 250 L 200 250 L 220 260 L 60 260 Z" fill="url(#hexStroke)" opacity="0.6"/>
+
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="66" font-weight="700" fill="url(#goldText)" letter-spacing="1">
+    <tspan x="60" y="150" textLength="700" lengthAdjust="spacingAndGlyphs">League Of Legends</tspan>
+    <tspan x="60" y="230" textLength="480" lengthAdjust="spacingAndGlyphs">Skin Changer</tspan>
+  </text>
+
+  <text x="60" y="280" font-family="'Segoe UI', Arial, sans-serif" font-size="23" fill="#A6B3C2" opacity="0.95">
+    <tspan x="60" y="280" textLength="720" lengthAdjust="spacingAndGlyphs">Swaps League of Legends champion skins locally with a simple Windows tool</tspan>
+  </text>
+
+  <line x1="60" y1="300" x2="500" y2="300" stroke="#0AC8B9" stroke-width="1" opacity="0.4"/>
+</svg>
